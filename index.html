@@ -1,39 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CL Apps</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLApps | Code. Laugh. Apps. Play. Succeed.</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      padding: 50px;
-      background: #f5f5f5;
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0b1020;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    background:#08101f;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    height:60px;
+}
+
+.logo h1{
+    color:#ffffff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    padding:100px 10%;
+    text-align:center;
+    background:linear-gradient(135deg,#111827,#0f172a);
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:800px;
+    margin:auto;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#3b82f6;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.section{
+    padding:80px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.product{
+    background:#111827;
+    border-radius:20px;
+    padding:40px;
+}
+
+.product h3{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.features{
+    margin-top:20px;
+}
+
+.features li{
+    margin-bottom:10px;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+
+.contact-form button{
+    background:#3b82f6;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#08101f;
+    color:#94a3b8;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:2rem;
     }
 
-    h1 {
-      color: #0070f3;
+    nav{
+        display:none;
     }
+}
+</style>
 
-    .button {
-      background: #0070f3;
-      color: white;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
 </head>
 
 <body>
 
-<h1>CL Apps</h1>
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="CLApps Logo">
+        <h1>CLApps</h1>
+    </div>
 
-<p>Mobile Apps, Games & AI Solutions</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<a class="button" href="mailto:contact@yourdomain.com">
-Contact Us
-</a>
+<section class="hero" id="home">
+    <h2>Creating Apps & Games That Make Life Easier and More Fun</h2>
+
+    <p>
+        CLApps develops innovative mobile applications and games designed to
+        make everyday life more enjoyable, reduce repetitive tasks, and help
+        people focus on what matters most.
+    </p>
+
+    <a href="#products" class="btn">Explore Our Products</a>
+</section>
+
+<section class="section" id="about">
+
+    <h2>About CLApps</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎮 Game Development</h3>
+            <p>
+                We build engaging games that bring fun, creativity, and
+                entertainment to players of all ages.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Mobile Apps</h3>
+            <p>
+                Our applications help simplify daily activities and improve
+                productivity through smart and intuitive design.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Innovation</h3>
+            <p>
+                We combine technology, usability, and creativity to develop
+                products that people genuinely enjoy using.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="products">
+
+    <h2>Featured Product</h2>
+
+    <div class="product">
+
+        <h3>⚽ Team Assistant Coach</h3>
+
+        <p>
+            Team Assistant Coach is a mobile application designed for coaches
+            and managers of recreational sports teams. The app helps organize
+            player rotations, manage substitutions, monitor playing time, and
+            collect valuable game statistics.
+        </p>
+
+        <br>
+
+        <p>
+            Whether you're coaching soccer, basketball, football, or volleyball,
+            Team Assistant Coach helps ensure fair participation while keeping
+            track of player performance and team progress.
+        </p>
+
+        <ul class="features">
+            <li>✅ Track player playtime</li>
+            <li>✅ Manage substitutions in real-time</li>
+            <li>✅ Record goals, assists, points and game stats</li>
+            <li>✅ Fair playtime distribution</li>
+            <li>✅ Team roster management</li>
+            <li>✅ Mobile-first design for coaches on the field</li>
+            <li>✅ Support for Soccer, Basketball, Football and Volleyball</li>
+            <li>✅ Season and game performance tracking</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="section" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-form">
+
+        <form action="mailto:clapps@clappsdesign.com" method="post" enctype="text/plain">
+
+            <input
+                type="text"
+                name="Name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                name="Email"
+                placeholder="Email Address"
+                required>
+
+            <input
+                type="tel"
+                name="Phone"
+                placeholder="Phone Number">
+
+            <textarea
+                name="Request"
+                rows="6"
+                placeholder="Tell us about your project, idea, or request..."
+                required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 CLApps | Code. Laugh. Apps. Play. Succeed.
+    </p>
+
+    <p>
+        clapps@clappsdesign.com |
+        www.clappsdesign.com
+    </p>
+
+</footer>
 
 </body>
 </html>
+```
