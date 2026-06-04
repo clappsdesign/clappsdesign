@@ -1,344 +1,194 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CLApps | Code. Laugh. Apps. Play. Succeed.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <title>CLApps | Code. Laugh. Apps. Play. Succeed.</title>
 
-body{
-    background:#0b1020;
-    color:white;
-    line-height:1.6;
-}
+    <meta name="description"
+        content="CLApps develops mobile apps and games that make life easier, more enjoyable, and more productive.">
 
-header{
-    background:#08101f; 
-    padding:10px 5%; 
-    display:flex; 
-    justify-content:space-between; 
-    align-items:center; 
-    position:sticky; 
-    top:0; 
-    z-index:100;
-}
-
-.logo{ 
-    display:flex; 
-    align-items:center; 
-    gap:20px; 
-} 
-    
-.logo img{ 
-    height:120px; /* Larger logo */ 
-    width:auto; 
-    display:block; 
-    background:none; /* Remove background */ 
-    border:none; 
-    box-shadow:none; 
-}
-
-.logo h1{ 
-    font-size:2rem; 
-    color:#ffffff; 
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#38bdf8;
-}
-
-.hero{
-    padding:100px 10%;
-    text-align:center;
-    background:linear-gradient(135deg,#111827,#0f172a);
-}
-
-.hero h2{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:1.2rem;
-    max-width:800px;
-    margin:auto;
-    color:#cbd5e1;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    background:#3b82f6;
-    color:white;
-    padding:15px 30px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.section{
-    padding:80px 10%;
-}
-
-.section h2{
-    text-align:center;
-    margin-bottom:40px;
-    color:#38bdf8;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#111827;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 0 20px rgba(0,0,0,.3);
-}
-
-.card h3{
-    margin-bottom:15px;
-    color:#38bdf8;
-}
-
-.product{
-    background:#111827;
-    border-radius:20px;
-    padding:40px;
-}
-
-.product h3{
-    color:#38bdf8;
-    margin-bottom:20px;
-}
-
-.features{
-    margin-top:20px;
-}
-
-.features li{
-    margin-bottom:10px;
-}
-
-.contact-form{
-    max-width:700px;
-    margin:auto;
-}
-
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:none;
-    border-radius:8px;
-}
-
-.contact-form button{
-    background:#3b82f6;
-    color:white;
-    border:none;
-    padding:15px 25px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#08101f;
-    color:#94a3b8;
-}
-
-.highlight{
-    color:#38bdf8;
-}
-
-@media(max-width:768px){
-    .hero h2{
-        font-size:2rem;
-    }
-
-    nav{
-        display:none;
-    }
-}
-</style>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <img src="logo.png" alt="CLApps Logo">
-        <h1>CLApps</h1>
-    </div>
+    <header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+        <div class="header-container">
 
-<section class="hero" id="home">
-    <h2>Creating Apps & Games That Make Life Easier and More Fun</h2>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="CLApps Logo">
+            </div>
 
-    <p>
-        CLApps develops innovative mobile applications and games designed to
-        make everyday life more enjoyable, reduce repetitive tasks, and help
-        people focus on what matters most.
-    </p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-    <a href="#products" class="btn">Explore Our Products</a>
-</section>
-
-<section class="section" id="about">
-
-    <h2>About CLApps</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>🎮 Game Development</h3>
-            <p>
-                We build engaging games that bring fun, creativity, and
-                entertainment to players of all ages.
-            </p>
         </div>
 
-        <div class="card">
-            <h3>📱 Mobile Apps</h3>
-            <p>
-                Our applications help simplify daily activities and improve
-                productivity through smart and intuitive design.
-            </p>
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-showcase">
+            <img src="images/team-assistant-coach.png"
+                alt="Team Assistant Coach Mobile App">
         </div>
 
-        <div class="card">
-            <h3>🚀 Innovation</h3>
-            <p>
-                We combine technology, usability, and creativity to develop
-                products that people genuinely enjoy using.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section class="section" id="products">
-
-    <h2>Featured Product</h2>
-
-    <div class="product">
-
-        <h3>⚽ Team Assistant Coach</h3>
+        <h1>
+            Creating Apps & Games That Make Life Easier and More Fun
+        </h1>
 
         <p>
-            Team Assistant Coach is a mobile application designed for coaches
-            and managers of recreational sports teams. The app helps organize
-            player rotations, manage substitutions, monitor playing time, and
-            collect valuable game statistics.
+            CLApps develops innovative mobile applications and games designed
+            to simplify everyday tasks, improve productivity, and create
+            enjoyable experiences for users around the world.
         </p>
 
-        <br>
+        <a href="#products" class="cta-button">
+            Explore Our Products
+        </a>
 
-        <p>
-            Whether you're coaching soccer, basketball, football, or volleyball,
-            Team Assistant Coach helps ensure fair participation while keeping
-            track of player performance and team progress.
-        </p>
+    </section>
 
-        <ul class="features">
-            <li>✅ Track player playtime</li>
-            <li>✅ Manage substitutions in real-time</li>
-            <li>✅ Record goals, assists, points and game stats</li>
-            <li>✅ Fair playtime distribution</li>
-            <li>✅ Team roster management</li>
-            <li>✅ Mobile-first design for coaches on the field</li>
-            <li>✅ Support for Soccer, Basketball, Football and Volleyball</li>
-            <li>✅ Season and game performance tracking</li>
-        </ul>
+    <section class="section" id="about">
 
-    </div>
+        <h2 class="section-title">
+            About CLApps
+        </h2>
 
-</section>
+        <div class="cards">
 
-<section class="section" id="contact">
+            <div class="card">
+                <h3>🎮 Game Development</h3>
+                <p>
+                    We create engaging mobile games focused on fun,
+                    entertainment, and memorable experiences.
+                </p>
+            </div>
 
-    <h2>Contact Us</h2>
+            <div class="card">
+                <h3>📱 Mobile Applications</h3>
+                <p>
+                    We build practical apps that help people save time,
+                    stay organized, and reduce everyday effort.
+                </p>
+            </div>
 
-    <div class="contact-form">
+            <div class="card">
+                <h3>🚀 Innovation</h3>
+                <p>
+                    Our mission is to combine technology, creativity,
+                    and usability to build products people genuinely
+                    enjoy using.
+                </p>
+            </div>
 
-        <form action="mailto:clapps@clappsdesign.com" method="post" enctype="text/plain">
+        </div>
 
-            <input
-                type="text"
-                name="Name"
-                placeholder="Full Name"
-                required>
+    </section>
 
-            <input
-                type="email"
-                name="Email"
-                placeholder="Email Address"
-                required>
+    <section class="section" id="products">
 
-            <input
-                type="tel"
-                name="Phone"
-                placeholder="Phone Number">
+        <h2 class="section-title">
+            Featured Product
+        </h2>
 
-            <textarea
-                name="Request"
-                rows="6"
-                placeholder="Tell us about your project, idea, or request..."
-                required></textarea>
+        <div class="product">
 
-            <button type="submit">
-                Send Message
-            </button>
+            <h3>⚽ Team Assistant Coach</h3>
 
-        </form>
+            <p>
+                Team Assistant Coach is a mobile application designed for
+                recreational coaches and team managers.
+            </p>
 
-    </div>
+            <p>
+                Manage player playtime, substitutions, attendance, and
+                performance statistics for Soccer, Basketball, Football,
+                and Volleyball teams.
+            </p>
 
-</section>
+            <ul>
 
-<footer>
+                <li>Track player playtime</li>
+                <li>Manage substitutions in real-time</li>
+                <li>Record goals, assists, points and statistics</li>
+                <li>Fair playtime distribution</li>
+                <li>Roster and attendance management</li>
+                <li>Season performance tracking</li>
+                <li>Game history and analytics</li>
+                <li>Mobile-first design for coaches</li>
 
-    <p>
-        © 2026 CLApps | Code. Laugh. Apps. Play. Succeed.
-    </p>
+            </ul>
 
-    <p>
-        clapps@clappsdesign.com |
-        www.clappsdesign.com
-    </p>
+        </div>
 
-</footer>
+    </section>
+
+    <section class="section" id="contact">
+
+        <h2 class="section-title">
+            Contact Us
+        </h2>
+
+        <div class="contact-form">
+
+            <form action="mailto:clapps@clappsdesign.com"
+                method="post"
+                enctype="text/plain">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number">
+
+                <textarea
+                    rows="6"
+                    name="message"
+                    placeholder="Tell us about your project, app idea, or request..."
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 CLApps. All Rights Reserved.</p>
+
+        <p>clapps@clappsdesign.com</p>
+
+        <p>www.clappsdesign.com</p>
+
+    </footer>
 
 </body>
+
 </html>
 ```
