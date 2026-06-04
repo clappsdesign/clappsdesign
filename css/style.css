@@ -1,4 +1,3 @@
-```css
 /* ==========================
    GLOBAL
 ========================== */
@@ -57,7 +56,7 @@ header{
 
 nav{
     display:flex;
-    justify-content:center;
+    justify-content:left;
     gap:40px;
     margin-top:20px;
 }
@@ -283,4 +282,3 @@ footer p{
     }
 
 }
-```
