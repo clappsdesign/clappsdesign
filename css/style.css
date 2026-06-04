@@ -36,11 +36,11 @@ header{
 }
 
 .logo-container{
-    text-align:center;
+    text-align:left;
 }
 
 .logo-container img{
-    height:220px;
+    height:260px;
     max-width:95%;
     width:auto;
 
