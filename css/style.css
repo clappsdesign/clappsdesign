@@ -339,3 +339,35 @@ footer{
         flex-direction:column;
     }
 }
+
+.contact-form{
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:1px solid var(--border);
+
+    background:#091423;
+
+    color:white;
+
+    border-radius:10px;
+}
+
+.contact-form button{
+
+    border:none;
+
+    cursor:pointer;
+}
