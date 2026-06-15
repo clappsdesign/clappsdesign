@@ -403,14 +403,16 @@ footer{
 
     opacity:0;
 
-    transform:translateY(40px);
+    transform:translateY(60px);
 
-    transition:1s;
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
 }
 
 .reveal.active{
 
     opacity:1;
 
-    transform:none;
+    transform:translateY(0);
 }
