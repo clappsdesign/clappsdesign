@@ -371,3 +371,19 @@ footer{
 
     cursor:pointer;
 }
+
+#particles{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.particle{
+    position:absolute;
+    width:3px;
+    height:3px;
+    border-radius:50%;
+    background:#1992ff;
+    opacity:.5;
+}
