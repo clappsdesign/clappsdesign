@@ -398,3 +398,19 @@ footer{
         transform:translateY(-120vh);
     }
 }
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:none;
+}
