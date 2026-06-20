@@ -50,9 +50,8 @@ body{
 }
 
 .logo-area img{
-
-    height:120px;
-    width:250px;
+    height: auto;
+    width: 300px;
 }
 
 nav{
