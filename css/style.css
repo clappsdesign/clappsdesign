@@ -430,3 +430,23 @@ footer{
 
     font-size:4rem;
 }
+
+.carousel{
+
+    display:flex;
+
+    gap:30px;
+
+    overflow-x:auto;
+
+    padding:20px;
+}
+
+.carousel img{
+
+    width:300px;
+
+    border-radius:20px;
+
+    border:1px solid var(--border);
+}
